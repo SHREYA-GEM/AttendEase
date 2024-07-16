@@ -39,12 +39,21 @@ This project is a face recognition system that can register users and take atten
     ```
 
 ## Usage
-1. Run the Streamlit app:
+1. Create the necessary CSV files:
+    - `attendance.csv`: An empty CSV file with headers `Identity,Timestamp`.
+    - `embedd_earlymorning.csv`: A CSV file to store face embeddings with appropriate headers.
+
+    ```bash
+    echo "Identity,Timestamp" > attendance.csv
+    touch embedd_earlymorning.csv
+    ```
+
+2. Run the Streamlit app:
     ```bash
     streamlit run app.py
     ```
 
-2. Use the web interface to register users and take attendance.
+3. Use the web interface to register users and take attendance.
 
 ## Code Structure
 - `app.py`: Main application file.
