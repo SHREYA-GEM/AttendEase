@@ -1,4 +1,4 @@
-# Face Recognition System
+#AttendEase 
 
 This project is a face recognition system that can register users and take attendance using facial recognition technology. The system leverages MTCNN for face detection and FaceNet for facial recognition.
 
