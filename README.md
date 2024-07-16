@@ -2,15 +2,10 @@
 
 This project is a face recognition system that can register users and take attendance using facial recognition technology. The system leverages MTCNN for face detection and FaceNet for facial recognition.
 
-## Team Members
-- Sandra
-- Saniya Sebastian
-- Shreya Gem Mathew
-- Vinsu Susan Thomas
  ## Team Members
-- [Sandra](https://github.com/sandra-username)
-- [Saniya Sebastian](https://github.com/saniya-username)
-- [Shreya Gem Mathew](https://github.com/shreya-username)
+- [Sandra](https://github.com/Sandraanand)
+- [Saniya Sebastian](https://github.com/SaniyaSebastian)
+- [Shreya Gem Mathew](https://github.com/SHREYA-GEM)
 - [Vinsu Susan Thomas](https://github.com/vinsu353)
 
 ## Features
