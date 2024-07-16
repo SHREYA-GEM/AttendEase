@@ -55,38 +55,7 @@ def detect_and_recognize_faces(image, embeddings_df, known_embeddings, detector,
     return recognized_faces
 
 
-# def detect_and_recognize_faces(image, embeddings_df, known_embeddings, detector, resnet):
-#     #global recognition_start_time
-#     recognition_start_time = None
-    
-#     detections = detector.detect_faces(image)
 
-#     recognized_faces = {}
-#     for detection in detections:
-#         x, y, w, h = detection['box']
-#         face = image[y:y + h, x:x + w]
-#         resized_face = cv2.resize(face, (160, 160))
-#         normalized_face = resized_face / 255.0
-#         tensor_face = torch.from_numpy(normalized_face.transpose((2, 0, 1))).unsqueeze(0).float()
-#         with torch.no_grad():
-#             detected_embedding = resnet(tensor_face).detach().numpy().flatten()
-#         similarities = cosine_similarity([detected_embedding], known_embeddings)
-#         max_similarity_index = np.argmax(similarities)
-#         max_similarity = similarities[0, max_similarity_index]
-#         if max_similarity > 0.6:
-#             identity = embeddings_df.iloc[max_similarity_index]['label']
-#             if recognition_start_time is None:
-#                 recognition_start_time = time.time()  # Start recognition timer
-#             else:
-#                 recognition_duration = time.time() - recognition_start_time
-#                 if recognition_duration >= 4:  # Face recognized for more than 4 seconds
-#                     recognized_faces[identity] = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
-#                     recognition_start_time = None  # Reset recognition timer
-#         else:
-#             recognition_start_time = None  # Reset recognition timer if face is not recognized
-            
-#     return recognized_faces
-# Function to write attendance to CSV
 def write_to_csv(recognized_faces):
     try:
         with open('attendance.csv', mode='a', newline='') as file:
