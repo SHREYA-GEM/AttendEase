@@ -1,0 +1,10 @@
+streamlit
+opencv-python
+requests
+Pillow
+numpy
+pandas
+torch
+mtcnn
+facenet-pytorch
+scikit-learn
