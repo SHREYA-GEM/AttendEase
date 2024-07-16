@@ -7,6 +7,11 @@ This project is a face recognition system that can register users and take atten
 - Saniya Sebastian
 - Shreya Gem Mathew
 - Vinsu Susan Thomas
+ ## Team Members
+- [Sandra](https://github.com/sandra-username)
+- [Saniya Sebastian](https://github.com/saniya-username)
+- [Shreya Gem Mathew](https://github.com/shreya-username)
+- [Vinsu Susan Thomas](https://github.com/vinsu353)
 
 ## Features
 - **Face Registration:** Capture multiple photos of a user and apply various augmentations to create robust embeddings.
