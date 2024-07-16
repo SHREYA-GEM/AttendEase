@@ -29,8 +29,8 @@ This project is a face recognition system that can register users and take atten
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/facerecognition-system.git
-    cd facerecognition-system
+    git clone https://github.com/SHREYA-GEM/AttendEase.git
+    cd AttendEase
     ```
 
 2. Install the required packages:
